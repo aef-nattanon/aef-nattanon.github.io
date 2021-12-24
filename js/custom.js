@@ -19,7 +19,7 @@
   }
 
   function setMyAge(element) {
-    element.textContent = calculateAge(new Date(1993, 12, 00));
+    element.textContent = calculateAge(new Date('1993/12/06'));
   }
 
   setMyAge(document.getElementById('old-age'));
