@@ -1,5 +1,4 @@
 
-
   /*-------------------------------------------------------------------------------
     PRE LOADER
   -------------------------------------------------------------------------------*/
@@ -9,6 +8,21 @@
   });
 
 
+  /*-------------------------------------------------------------------------------
+    Age
+  -------------------------------------------------------------------------------*/
+
+  function calculateAge(birthday) { // birthday is a date
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+
+  function setMyAge(element) {
+    element.textContent = calculateAge(new Date(1993, 12, 06));
+  }
+
+  setMyAge(document.getElementById('old-age'));
 
   /* HTML document is loaded. DOM is ready. 
   -------------------------------------------*/
