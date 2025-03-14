@@ -372,7 +372,8 @@ a:focus {
 }
 
 #home .home-img {
-  background: url('../images/home-img.jpeg') no-repeat;
+  /* background: url('../images/home-img.jpeg') no-repeat; */
+  background: url('../images/home-img-2.png') no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
