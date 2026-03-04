@@ -1078,3 +1078,161 @@ footer .footer-copyright p {
     padding: 40px 0;
   }
 }
+
+
+/* ============================================================
+   MODERN POLISH — ADDITIONAL DETAILS
+   ============================================================ */
+
+/* Dot-grid background pattern on deep sections */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(108, 99, 255, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all section content sits above the dot grid */
+.navbar,
+.preloader,
+section,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* -----------------------------------------------
+   Hero welcome pill badge
+-------------------------------------------------- */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(108, 99, 255, 0.12);
+  border: 1px solid rgba(108, 99, 255, 0.35);
+  border-radius: 100px;
+  padding: 4px 14px 4px 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--color-accent-end) !important;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+.badge-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent-end);
+  box-shadow: 0 0 6px var(--color-accent-end);
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+
+/* -----------------------------------------------
+   Skill row — flex layout (replaces float)
+-------------------------------------------------- */
+
+.skills-thumb .skill-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+/* Override Bootstrap's float-based pull-right inside skill bars */
+#about .skills-thumb strong,
+#about .skills-thumb span.pull-right {
+  float: none !important;
+}
+
+#about .skills-thumb > strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+
+/* -----------------------------------------------
+   Service icon size & spacing
+-------------------------------------------------- */
+
+#service .service-thumb .fa {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 18px;
+  background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* -----------------------------------------------
+   Section heading subtle glow
+-------------------------------------------------- */
+
+#home h1,
+#experience .section-title h1,
+#education .section-title h1 {
+  text-shadow: 0 0 40px rgba(108, 99, 255, 0.20);
+}
+
+
+/* -----------------------------------------------
+   Glassmorphism card animated gradient border on hover
+-------------------------------------------------- */
+
+#service .service-thumb,
+#about .skill-thumb {
+  transition: transform var(--transition-mid), box-shadow var(--transition-mid),
+              border-color var(--transition-mid), background var(--transition-mid);
+}
+
+#service .service-thumb:hover {
+  background: rgba(108, 99, 255, 0.08);
+}
+
+
+/* -----------------------------------------------
+   Timeline media items — remove Bootstrap margin reset
+-------------------------------------------------- */
+
+#experience .media,
+#education .media {
+  overflow: visible;
+}
+
+
+/* -----------------------------------------------
+   Floating gradient orb accents (decorative)
+-------------------------------------------------- */
+
+#home::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108, 99, 255, 0.12) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#home .container {
+  position: relative;
+  z-index: 1;
+}
