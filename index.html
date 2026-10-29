@@ -28,7 +28,29 @@ http://www.templatemo.com/tm-498-Aef.Nattanon
 .language-switch button[aria-pressed="true"] { background: #222; color: #fff; }
 .language-switch button:focus-visible { outline: 3px solid #c08b20; outline-offset: 2px; }
 </style>
-</head>
+<style id="refined-dark-theme">
+:root{--color-bg-deepest:#101113;--color-bg-deep:#16181b;--color-bg-card:#1c1f23;--color-accent-start:#c7ad78;--color-accent-end:#e2cfaa;--color-accent-mid:#c7ad78;--color-accent-glow:transparent;--color-text-primary:#f0eeea;--color-text-muted:#b4b2ae;--radius-btn:6px}
+body{font-weight:400;line-height:1.8}body:before,#home:before,.section-title:after{display:none}
+h1,h2,h3{font-weight:600;line-height:1.45}p{font-weight:400;line-height:1.9}h1{font-size:38px}
+#home h1,#experience .section-title h1,#education .section-title h1{text-shadow:none}
+.custom-navbar{background:#101113!important;border-bottom:1px solid #303236}.custom-navbar.top-nav-collapse{background:#101113;box-shadow:none}
+.custom-navbar .navbar-brand,#home h1 strong,.color-yellow,.service-thumb .fa,#experience .media .fa,#education .media .fa{background:none!important;-webkit-text-fill-color:initial;color:var(--color-accent-start)}
+#home .col-md-6:last-child,.bg-yellow{background:#16181b!important}
+#home .home-img:after,#experience .experience-img:after,#education .education-img:after,#contact .contact-img:after{background:rgba(0,0,0,.14)}
+#quotes .overlay{background:rgba(16,17,19,.75)}#quotes img{filter:none}
+.section-btn,.section-btn:hover,.btn-success:focus{background:#c7ad78;color:#16181b!important;box-shadow:none;border-radius:6px;letter-spacing:.5px}
+.hero-badge{background:transparent;border:0;padding-left:0;letter-spacing:1px}.badge-dot{background:#c7ad78;box-shadow:none;animation:none}
+#service .service-thumb,#about .skill-thumb,#contact .contact-thumb,.bg-white{background:#1c1f23!important;backdrop-filter:none;border-color:#34363a;box-shadow:none}
+#service .service-thumb:hover{background:#23262a;transform:none;box-shadow:none;border-color:#777061}
+#about .progress-bar-primary{background:#c7ad78}#about .progress{background:#34363a}
+.social-icon li a:hover{background:#c7ad78;color:#151515;box-shadow:none;transform:none}
+.section-title{padding-bottom:18px}.profile-summary{max-width:60ch;margin-top:22px}.skill-descriptions{margin-bottom:26px}.skill-descriptions p{font-size:14px;line-height:1.9;margin-bottom:14px}
+#home .home-thumb{height:auto;min-height:100vh;padding-top:100px;padding-bottom:65px}
+.language-switch{background:#1c1f23!important;border-color:#444!important;box-shadow:none!important}.language-switch button{color:#eee!important}.language-switch button[aria-pressed=true]{background:#c7ad78!important;color:#171717!important}
+::-webkit-scrollbar-thumb{background:#777061}
+@media(max-width:767px){h1{font-size:30px}#home .home-thumb{min-height:0;padding:40px 26px}#home .home-img{height:55vh}.profile-summary{font-size:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.wow{visibility:visible!important}}
+</style></head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 
@@ -111,7 +133,7 @@ http://www.templatemo.com/tm-498-Aef.Nattanon
                               <p class="color-yellow"><span data-th="ข้อมูลส่วนตัว" data-en="Personal information">ข้อมูลส่วนตัว</span></p>
                          </div>
                          <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              <p><span data-th="ผมชื่อ ณัฐนนท์ แซ่ตั๋น" data-en="My name is Nattanon Saetan.">ผมชื่อ ณัฐนนท์ แซ่ตั๋น</span></p>
+                              <p><span data-th="ผมชื่อ ณัฐนนท์ แซ่ตั๋น" data-en="My name is Nattanon Saetan.">ผมชื่อ ณัฐนนท์ แซ่ตั๋น</span></p><p class="profile-summary"><span data-th="ผมเป็น Full Stack Developer ที่ชอบพัฒนาซอฟต์แวร์ทั้งส่วนที่ผู้ใช้มองเห็นและระบบเบื้องหลัง สนุกกับการแก้ปัญหาด้วยโค้ด และเรียนรู้เทคโนโลยีใหม่ ๆ เพื่อนำมาปรับใช้กับงาน" data-en="I am a full stack developer who enjoys building both user interfaces and the systems behind them. I like solving problems through code and learning new technologies to apply in my work.">ผมเป็น Full Stack Developer ที่ชอบพัฒนาซอฟต์แวร์ทั้งส่วนที่ผู้ใช้มองเห็นและระบบเบื้องหลัง สนุกกับการแก้ปัญหาด้วยโค้ด และเรียนรู้เทคโนโลยีใหม่ ๆ เพื่อนำมาปรับใช้กับงาน</span></p>
                               <p><span data-th="อายุ: " data-en="Age: ">อายุ: </span><span id="old-age">18</span><span data-th=" ปี" data-en=" years old"> ปี</span></p>
                          </div>
                     </div>
@@ -128,7 +150,7 @@ http://www.templatemo.com/tm-498-Aef.Nattanon
                               <p class="color-white">Java Script, Ruby, Python, Go, SQL, PHP, HTML, CSS</p>
                          </div>
 
-                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+                         <div class="skill-descriptions"><p><span data-th="Ruby on Rails — ใช้พัฒนาเว็บแอปพลิเคชันและระบบเบื้องหลัง โดยเชื่อมต่อการทำงานกับฐานข้อมูล" data-en="Ruby on Rails — Building web applications and backend systems connected to databases.">Ruby on Rails — ใช้พัฒนาเว็บแอปพลิเคชันและระบบเบื้องหลัง โดยเชื่อมต่อการทำงานกับฐานข้อมูล</span></p><p><span data-th="React และ React Native — ใช้สร้างส่วนติดต่อผู้ใช้สำหรับเว็บและแอปบนมือถือ" data-en="React and React Native — Creating user interfaces for web and mobile applications.">React และ React Native — ใช้สร้างส่วนติดต่อผู้ใช้สำหรับเว็บและแอปบนมือถือ</span></p><p><span data-th="Python, Go และ SQL — เป็นส่วนหนึ่งของชุดทักษะด้านการเขียนโปรแกรมและการทำงานกับข้อมูล" data-en="Python, Go and SQL — Part of my toolkit for programming and working with data.">Python, Go และ SQL — เป็นส่วนหนึ่งของชุดทักษะด้านการเขียนโปรแกรมและการทำงานกับข้อมูล</span></p></div><div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
                          <strong>Rails</strong>
                               <span class="color-white pull-right">90%</span>
                                    <div class="progress">
